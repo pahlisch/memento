@@ -2,11 +2,16 @@
 
 
     return (
-        <div>
+        <div className="card">
             <div className={selected && 'selected'}>
-                <img alt="" src={image} className="card-face" />
+                <img 
+                alt="" 
+                src={image} 
+                className="card-face" 
+                />
 
-                <img alt=""
+                <img 
+                alt=""
                 className="card-back"
                 src = {'/assets/fireship.png'}
                 />
