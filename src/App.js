@@ -1,6 +1,6 @@
-import React from 'react';
-import './App.css';
-import shuffle from './utilities/shuffle'
+import { useState } from 'react';
+import Card from './components/Card';
+import shuffle from './utilities/shuffle';
 
 function App() {
   const [cards, setCards] = useState([shuffle]);
@@ -10,7 +10,12 @@ function App() {
       {cards.map((card) => {
         const { image, id, matched } = card;
         return (
-          <Card/>
+          <Card
+            key={id}
+            image={image}
+            selected={false}
+            onClick={() => {}}
+          />
         );
       })}
     </div>
